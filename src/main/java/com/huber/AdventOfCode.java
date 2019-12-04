@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Date;
 
-public class Main {
+public class AdventOfCode {
 
     public static void main(String[] args) throws IOException {
         System.out.println(new Timestamp(new Date().getTime()) + " ---- Starting calculation -----");
