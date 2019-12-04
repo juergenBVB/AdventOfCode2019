@@ -18,6 +18,7 @@ class SecureContainerTest {
     void checkPasswordOne() {
         assertTrue(this.secureContainer.checkPasswordOne("111111"));
         assertTrue(this.secureContainer.checkPasswordOne("111123"));
+
         assertFalse(this.secureContainer.checkPasswordOne("223450"));
         assertFalse(this.secureContainer.checkPasswordOne("135679"));
         assertFalse(this.secureContainer.checkPasswordOne("123789"));
@@ -28,11 +29,12 @@ class SecureContainerTest {
     void checkPasswordTwo() {
         assertTrue(this.secureContainer.checkPasswordTwo("112233"));
         assertTrue(this.secureContainer.checkPasswordTwo("111122"));
-        assertFalse(this.secureContainer.checkPasswordTwo("123444"));
-        assertFalse(this.secureContainer.checkPasswordTwo("124444"));
+        assertTrue(this.secureContainer.checkPasswordTwo("112223"));
         assertTrue(this.secureContainer.checkPasswordTwo("112222"));
+
         assertFalse(this.secureContainer.checkPasswordTwo("112220"));
         assertFalse(this.secureContainer.checkPasswordTwo("444445"));
-        assertTrue(this.secureContainer.checkPasswordTwo("112223"));
+        assertFalse(this.secureContainer.checkPasswordTwo("123444"));
+        assertFalse(this.secureContainer.checkPasswordTwo("124444"));
     }
 }
