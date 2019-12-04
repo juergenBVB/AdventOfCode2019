@@ -1,6 +1,5 @@
-package aoc4;
+package com.huber.aoc04;
 
-import com.huber.aoc04.SecureContainer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
