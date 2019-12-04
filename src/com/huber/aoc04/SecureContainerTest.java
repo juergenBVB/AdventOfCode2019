@@ -15,12 +15,24 @@ class SecureContainerTest {
     }
 
     @Test
-    void checkPassword() {
-        assertTrue(this.secureContainer.checkPassword("111111"));
-        assertTrue(this.secureContainer.checkPassword("111123"));
-        assertFalse(this.secureContainer.checkPassword("223450"));
-        assertFalse(this.secureContainer.checkPassword("135679"));
-        assertFalse(this.secureContainer.checkPassword("123789"));
-        assertFalse(this.secureContainer.checkPassword("402328"));
+    void checkPasswordOne() {
+        assertTrue(this.secureContainer.checkPasswordOne("111111"));
+        assertTrue(this.secureContainer.checkPasswordOne("111123"));
+        assertFalse(this.secureContainer.checkPasswordOne("223450"));
+        assertFalse(this.secureContainer.checkPasswordOne("135679"));
+        assertFalse(this.secureContainer.checkPasswordOne("123789"));
+        assertFalse(this.secureContainer.checkPasswordOne("402328"));
+    }
+
+    @Test
+    void checkPasswordTwo() {
+        assertTrue(this.secureContainer.checkPasswordTwo("112233"));
+        assertTrue(this.secureContainer.checkPasswordTwo("111122"));
+        assertFalse(this.secureContainer.checkPasswordTwo("123444"));
+        assertFalse(this.secureContainer.checkPasswordTwo("124444"));
+        assertTrue(this.secureContainer.checkPasswordTwo("112222"));
+        assertFalse(this.secureContainer.checkPasswordTwo("112220"));
+        assertFalse(this.secureContainer.checkPasswordTwo("444445"));
+        assertTrue(this.secureContainer.checkPasswordTwo("112223"));
     }
 }

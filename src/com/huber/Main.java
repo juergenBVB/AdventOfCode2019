@@ -16,10 +16,10 @@ public class Main {
 
         // calculate first Result
         final Integer firstResult = secureContainer.partOne();
-//        final Integer secondResult = crossedWires.partTwo();
+        final Integer secondResult = secureContainer.partTwo();
 
         // output
-        System.out.println(String.format("First result: %d, Second result: %d", firstResult, 0));
+        System.out.println(String.format("First result: %d, Second result: %d", firstResult, secondResult));
         System.out.println(new Timestamp(new Date().getTime()) + " ---- Finished calculation -----");
     }
 
