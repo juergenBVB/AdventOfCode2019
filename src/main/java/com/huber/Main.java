@@ -1,6 +1,5 @@
 package com.huber;
 
-import com.huber.aoc03.CrossedWires;
 import com.huber.aoc04.SecureContainer;
 
 import java.io.IOException;
