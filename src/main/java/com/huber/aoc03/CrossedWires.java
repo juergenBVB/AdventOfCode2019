@@ -1,9 +1,9 @@
 package com.huber.aoc03;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -170,9 +170,9 @@ public class CrossedWires {
     }
 
     private List<List<Instruction>> readInput() throws IOException {
-        File file = new File("C:\\dev\\projects\\AdventOfCode\\src\\com\\huber\\aoc03\\input.txt");
-
-        BufferedReader br = new BufferedReader(new FileReader(file));
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource("aoc03/input.txt");
+        BufferedReader br = new BufferedReader(new FileReader(resource.getFile()));
 
         String line;
         final List<List<Instruction>> inputParameters = new ArrayList<>();

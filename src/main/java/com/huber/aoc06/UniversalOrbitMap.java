@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -54,9 +55,9 @@ public class UniversalOrbitMap {
     }
 
     private List<OrbitPlan> readInput() throws IOException {
-        File file = new File("C:\\dev\\projects\\AdventOfCode\\src\\main\\resources\\aoc06\\input.txt");
-
-        BufferedReader br = new BufferedReader(new FileReader(file));
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource("aoc06/input.txt");
+        BufferedReader br = new BufferedReader(new FileReader(resource.getFile()));
 
         String line;
         final List<OrbitPlan> inputParameters = new ArrayList<>();

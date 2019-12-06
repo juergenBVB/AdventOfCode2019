@@ -1,6 +1,9 @@
 package com.huber.aoc01;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,9 +30,10 @@ public class TyrannyOfRocketEquation {
     }
 
     private List<Integer> readInput() throws IOException {
-        File file = new File("C:\\dev\\projects\\AdventOfCode\\src\\com\\huber\\aoc01\\input.txt");
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource("aoc01/input.txt");
 
-        BufferedReader br = new BufferedReader(new FileReader(file));
+        BufferedReader br = new BufferedReader(new FileReader(resource.getFile()));
 
         String line;
         final List<Integer> inputParameters = new ArrayList<>();
