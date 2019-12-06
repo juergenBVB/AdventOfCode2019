@@ -1,6 +1,8 @@
 package com.huber.aoc04;
 
-public class SecureContainer {
+import com.huber.IAdventOfCode;
+
+public class SecureContainer implements IAdventOfCode {
     private final Integer START = 402328;
     private final Integer END = 864247;
 

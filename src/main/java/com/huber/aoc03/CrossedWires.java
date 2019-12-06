@@ -1,5 +1,7 @@
 package com.huber.aoc03;
 
+import com.huber.IAdventOfCode;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,7 +11,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CrossedWires {
+public class CrossedWires implements IAdventOfCode {
     private final String INSTRUCTION_REGEX = "([LURD])(\\d+)";
 
     public CrossedWires() {

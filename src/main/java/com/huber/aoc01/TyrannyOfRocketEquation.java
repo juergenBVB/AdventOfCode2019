@@ -1,5 +1,7 @@
 package com.huber.aoc01;
 
+import com.huber.IAdventOfCode;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +9,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TyrannyOfRocketEquation {
+public class TyrannyOfRocketEquation implements IAdventOfCode {
     public TyrannyOfRocketEquation() {
     }
 

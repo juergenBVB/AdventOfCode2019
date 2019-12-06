@@ -11,10 +11,10 @@ public class AdventOfCode {
     public static void main(String[] args) throws IOException {
         System.out.println(new Timestamp(new Date().getTime()) + " ---- Starting calculation -----");
 
-        final UniversalOrbitMap universalOrbitMap = new UniversalOrbitMap();
+        final IAdventOfCode adventOfCode = new UniversalOrbitMap();
 
-        final Integer firstResult = universalOrbitMap.partOne();
-        final Integer secondResult = universalOrbitMap.partTwo();
+        final Integer firstResult = adventOfCode.partOne();
+        final Integer secondResult = adventOfCode.partTwo();
 
         // output
         System.out.println(String.format("First result: %d, Second result: %d", firstResult, secondResult));
