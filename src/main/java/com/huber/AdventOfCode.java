@@ -1,7 +1,6 @@
 package com.huber;
 
-import com.huber.aoc04.SecureContainer;
-import com.huber.aoc05.Sunny;
+import com.huber.aoc6.UniversalOrbitMap;
 
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -12,10 +11,10 @@ public class AdventOfCode {
     public static void main(String[] args) throws IOException {
         System.out.println(new Timestamp(new Date().getTime()) + " ---- Starting calculation -----");
 
-        final Sunny sunny = new Sunny();
+        final UniversalOrbitMap universalOrbitMap = new UniversalOrbitMap();
 
-        final Integer firstResult = sunny.partOne();
-        final Integer secondResult = sunny.partTwo();
+        final Integer firstResult = universalOrbitMap.partOne();
+        final Integer secondResult = universalOrbitMap.partTwo();
 
         // output
         System.out.println(String.format("First result: %d, Second result: %d", firstResult, secondResult));
