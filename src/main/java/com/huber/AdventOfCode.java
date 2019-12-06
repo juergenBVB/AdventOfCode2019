@@ -1,6 +1,6 @@
 package com.huber;
 
-import com.huber.aoc6.UniversalOrbitMap;
+import com.huber.aoc06.UniversalOrbitMap;
 
 import java.io.IOException;
 import java.sql.Timestamp;

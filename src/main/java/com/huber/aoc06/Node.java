@@ -1,4 +1,4 @@
-package com.huber.aoc6;
+package com.huber.aoc06;
 
 import java.util.List;
 import java.util.Objects;

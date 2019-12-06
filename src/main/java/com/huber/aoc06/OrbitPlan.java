@@ -1,4 +1,4 @@
-package com.huber.aoc6;
+package com.huber.aoc06;
 
 public class OrbitPlan {
     private String parentPlanet;
